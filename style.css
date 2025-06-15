@@ -71,13 +71,15 @@ nav ul li a {
     align-items: center;
   }
 
-  .menu-icon {
-    display: block;
-    order: 1; /* لجعلها في الطرف الأيسر */
+  /* نحدد ترتيب العناصر */
+  .logo-title {
+    order: 1; /* يظهر على اليمين */
   }
 
-  .logo-title {
-    order: 2; /* لجعلها في الطرف الأيمن */
+  .menu-icon {
+    display: block;
+    order: 2; /* يظهر على اليسار */
+    margin-right: auto; /* يدفعه لليسار الكامل */
   }
 
   .nav-links {
