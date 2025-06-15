@@ -177,7 +177,7 @@ footer {
 /* تحسين للجوال */
 @media (max-width: 768px) {
   .swiper {
-    height: 250px; /* ارتفاع أقل مناسب للجوال */
+    height: 150px; /* ارتفاع أقل مناسب للجوال */
   }
 }
 
@@ -565,7 +565,7 @@ body {
 .swiper-button-next, 
 .swiper-button-prev {
   color: white;
-  background: rgba(77, 184, 72, 0.7);
+  background: none;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -574,7 +574,7 @@ body {
 
 .swiper-button-next:hover, 
 .swiper-button-prev:hover {
-  background: rgba(11, 45, 114, 0.9);
+    background: none;
 }
 
 .swiper-button-next::after, 
@@ -664,7 +664,7 @@ body {
 /* تنسيق عناصر التحكم */
 .swiper-button-next, 
 .swiper-button-prev {
-  background: rgba(11, 45, 114, 0.8);
+    background: none;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -909,3 +909,4 @@ body {
     font-size: 14px;
   }
 }
+
