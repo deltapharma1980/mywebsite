@@ -1,0 +1,456 @@
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شركة دلتا للصناعات الدوائية</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script src="script.js"></script>
+</body>
+
+<body>
+
+<header>
+  <div class="header-content">
+    <div class="logo-title">
+      <img src="images/logo.png" alt="لوغو الشركة" class="logo">
+      <h1>دلتا للصناعات الدوائية</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="products.html">المنتجات</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+       
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- نفس الهيدر من الصفحة الرئيسية -->
+
+  <main>
+  
+  <button class="back-button" onclick="window.history.back()">
+  <i class="fas fa-arrow-right"></i> رجوع
+</button>
+  
+    <section class="products-list">
+  <div class="container">
+    <h2 class="section-title">الكبسول</h2>
+    
+    <div class="products-grid">
+      <!-- منتج 1 -->
+      <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product31')">
+          <img src="images/31.jpg" alt="كبسول">
+          <h3>اكسبروست</h3>
+        </div>
+      </div>
+      
+      <!-- منتج 2 -->
+            <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product25')">
+          <img src="images/25.jpg" alt="كبسول">
+          <h3>اورنادل</h3>
+        </div>
+      </div>
+	  
+	  <!-- منتج 2 -->
+	        <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product26')">
+          <img src="images/26.png" alt="كبسول">
+          <h3>أندوبينا</h3>
+        </div>
+      </div>
+	  
+	  <!-- منتج 2 -->
+	        <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product24')">
+          <img src="images/24.png" alt="كبسول">
+          <h3>باراسين</h3>
+        </div>
+      </div>
+	  
+	  <!-- منتج 2 -->
+	        <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product23')">
+          <img src="images/23.png" alt="كبسول">
+          <h3>تريفيتا</h3>
+        </div>
+      </div>
+	  
+	  <!-- منتج 2 -->
+	        <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product27')">
+          <img src="images/27.png" alt="كبسول">
+          <h3>سيفيم 400</h3>
+        </div>
+      </div>
+	  
+	  <!-- منتج 2 -->
+	        <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product28')">
+           <img src="images/28.png" alt="كبسول">
+          <h3>لانسودول 15 ملغ</h3>
+        </div>
+      </div>
+	  
+	  <!-- منتج 2 -->
+	       <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product29')">
+          <img src="images/29.png" alt="كبسول">
+          <h3>لانسودول 30 ملغ</h3>
+        </div>
+      </div>
+	
+	<!-- منتج 2 -->
+	       <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product30')">
+          <img src="images/30.png" alt="كبسول">
+          <h3>دلتافوليك</h3>
+        </div>
+      </div>
+	  
+	  
+	     <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product32')">
+          <img src="images/32.jpg" alt="كبسول">
+          <h3>نيوفلوكو فورت</h3>
+        </div>
+      </div>
+	  
+	     <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product33')">
+          <img src="images/33.png" alt="كبسول">
+          <h3>ديكسلانسوبرازول 30 ملغ</h3>
+        </div>
+      </div>
+	  
+	     <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product34')">
+          <img src="images/34.png " alt="كبسول">
+          <h3>ديكسلانسوبرازول 60 ملغ</h3>
+        </div>
+      </div>
+	  
+	 
+	  
+	  
+    </div>
+  </div>
+</section>
+
+<!-- النوافذ المنبثقة -->
+<div id="product31" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>اكسبروست</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل كبسولة تحتوي على: تامسولوسین هیدروكلورید ٠٫٤ ملغ. 
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="product25" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>اورنادل</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل كبسولة تحتوي على: كلورفینیرامین مالیات ٦ ملغ. 
+فینیل ایفرین هیدروكلورید ٢٠ ملغ. 
+
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="product26" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>أندوبينا</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل كبسولة تحتوي على: اندومیتاسین ٢٥ ملغ. 
+فیتامین ب١ ٥٠ ملغ. 
+
+
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="product24" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>باراسين</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل كبسولة تحتوي على: باراسیتامول ٤٠٠ ملغ. 
+هیوسین - ن - بوتیل برومید ١٠ ملغ. 
+
+
+
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="product23" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>تريفيتا</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل كبسولة تحتوي على: فیتامین ب١ ١٠٠ ملغ. 
+فیتامین ب٦ ١٠٠ ملغ. 
+فیتامین ب١٢ ٥٠٠ مكغ. 
+
+
+
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="product27" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>سيفيم</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل كبسولة تحتوي على: سیفیكسیم ٤٠٠ ملغ. 
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="product28" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>لانسودول 15 ملغ</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل كبسولة تحتوي على: لانسوبرازول ١٥ملغ. 
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+<div id="product29" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>لانسودول 30 ملغ</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل كبسولة تحتوي على: لانسوبرازول 30 ملغ. 
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+<div id="product30" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>دلتافوليك</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل كبسولة تحتوي على: كبریتات الحدیدي الجافة ١٥٠ ملغ بیریدوكسین هیدروكلوراید ١ ملغ
+ فولیك أسید ٠٫٥ ملغ 
+نیكوتین أمید ١٠ ملغ 
+ثیامین مونونترات ٢ ملغ 
+أسكوربیك أسید ٥٠ ملغ 
+ریبوفلافین ٢ ملغ 
+
+
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+<div id="product32" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>نيوفلوكو فورت</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>فلوكونازول
+ 200 ملغ
+ (10 كبسولات)
+
+
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+<div id="product33" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>ديكسلانسوبرازول 30 ملغ</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل محفظة متأخرة التحرر تحتوي على:
+حبیبات مغلفة معویة مكونة من دیكسلانسوبرازول  ٣٠ملغ
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+<div id="product34" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>ديكسلانسوبرازول 60 ملغ</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل محفظة متأخرة التحرر تحتوي على:
+حبیبات مغلفة معویة مكونة من دیكسلانسوبرازول  ٦٠ملغ
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+<section class="contact-section">
+  <div class="contact-footer">
+    <div class="contact-item">
+      <div class="icon-circle email"><i class="fa fa-envelope"></i></div>
+      <h4>الإيميل</h4>
+      <p>deltapharma@gmail.com</p>
+    </div>
+    <div class="contact-item">
+      <div class="icon-circle whatsapp"><i class="fa fa-whatsapp"></i></div>
+      <h4>الواتس</h4>
+      <p>98765432963+</p>
+    </div>
+    <div class="contact-item">
+      <div class="icon-circle phone"><i class="fa fa-phone"></i></div>
+      <h4>الهاتف</h4>
+      <p>+963 11 6025</p>
+    </div>
+    <div class="contact-item">
+      <div class="icon-circle location"><i class="fa fa-map-marker"></i></div>
+      <h4>العنوان</h4>
+      <p>المنصورة<br>حلب - سوريا</p>
+    </div>
+  </div>
+  <p class="copyright">© 2025 شركة دلتا للصناعات الدوائية. جميع الحقوق محفوظة.</p>
+</section>
+  <!-- نفس الفوتر من الصفحة الرئيسية -->
+</body>
+</html>

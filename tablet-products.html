@@ -1,0 +1,364 @@
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شركة دلتا للصناعات الدوائية</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script src="script.js"></script>
+</body>
+
+<body>
+
+<header>
+  <div class="header-content">
+    <div class="logo-title">
+      <img src="images/logo.png" alt="لوغو الشركة" class="logo">
+      <h1>دلتا للصناعات الدوائية</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="products.html">المنتجات</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+       
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- نفس الهيدر من الصفحة الرئيسية -->
+
+  <main>
+  
+  <button class="back-button" onclick="window.history.back()">
+  <i class="fas fa-arrow-right"></i> رجوع
+</button>
+  
+    <section class="products-list">
+  <div class="container">
+    <h2 class="section-title">المضغوطات</h2>
+    
+    <div class="products-grid">
+      <!-- منتج 1 -->
+      <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product15')">
+          <img src="images/Picture15.jpg" alt="مضغوطات">
+          <h3>اليغرا 10 ملغ</h3>
+        </div>
+      </div>
+      
+      <!-- منتج 2 -->
+            <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product14')">
+          <img src="images/Picture14.jpg" alt="مضغوطات">
+          <h3>اليغرا 20 ملغ</h3>
+        </div>
+      </div>
+	  
+	  <!-- منتج 2 -->
+	        <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product16')">
+          <img src="images/Picture16.png" alt="مضغوطات">
+          <h3>كاتافاست</h3>
+        </div>
+      </div>
+	  
+	  <!-- منتج 2 -->
+	        <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product21')">
+          <img src="images/Picture21.png" alt="مضغوطات">
+          <h3>كاتافاست بلس</h3>
+        </div>
+      </div>
+	  
+	  <!-- منتج 2 -->
+	        <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product17')">
+          <img src="images/Picture17.jpg" alt="مضغوطات">
+          <h3>سيفروسيم</h3>
+        </div>
+      </div>
+	  
+	  <!-- منتج 2 -->
+	        <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product19')">
+          <img src="images/Picture19.png" alt="مضغوطات">
+          <h3>سيبرودلتا 500 ملغ</h3>
+        </div>
+      </div>
+	  
+	  <!-- منتج 2 -->
+	        <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product18')">
+           <img src="images/Picture18.png" alt="مضغوطات">
+          <h3>سيبرودلتا 750 ملغ</h3>
+        </div>
+      </div>
+	  
+	  <!-- منتج 2 -->
+	       <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product22')">
+          <img src="images/Picture22.jpg" alt="مضغوطات">
+          <h3>جيرموتريم فورت</h3>
+        </div>
+      </div>
+	
+	<!-- منتج 2 -->
+	       <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product20')">
+          <img src="images/Picture20.png" alt="مضغوطات">
+          <h3>نوفادوكس</h3>
+        </div>
+      </div>
+	  
+	 
+	  
+	  
+    </div>
+  </div>
+</section>
+
+<!-- النوافذ المنبثقة -->
+<div id="product15" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>اليغرا 10 ملغ</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل مضغوطة ملبسة بالفيلم تحتوي على:
+تادالافيل 10 ملغ.
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="product14" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>اليغرا 20 ملغ</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل مضغوطة ملبسة بالفيلم تحتوي على:
+تادالافيل 20 ملغ.
+
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="product16" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>كاتافاست</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل مضغوطة ملبسة بالفیلم تحتوي على: دیكلوفیناك بوتاسیوم  ٥٠ ملغ
+
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="product21" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>كاتافاست بلس</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل مضغوطة ملبسة بالفیلم تحتوي على: دیكلوفیناك البوتاسیوم  ٥٠ملغ. باراسیتامول  ٥٠٠ملغ
+
+
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="product17" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>سيفروسيم</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل مضغوطة ملبسة بالفیلم تحتوي على: سیفروكسیم (أكسیتیل)  ٥٠٠ملغ
+
+
+
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="product19" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>سيبرودلتا 500 ملغ</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل مضغوطة ملبسة بالفيلم تحتوي على:
+سيبروفلوكساسين 500 ملغ
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="product18" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>سيبرودلتا 750 ملغ</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل مضغوطة ملبسة بالفيلم تحتوي على:
+سيبروفلوكساسين 750  ملغ
+
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+<div id="product22" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>جيرموتريم فورت</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>تريميتوبريم 160 ملغ، سلفاميتوكسازول 800 ملغ
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="product20" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>نوفادوكس</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل مضغوطة تحتوي على: میكلیزین ھیدروكلورید:   ٢٥ملغ. فیتامین ب ٥٠ ,٦ملغ
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+
+  </main>
+
+<section class="contact-section">
+  <div class="contact-footer">
+    <div class="contact-item">
+      <div class="icon-circle email"><i class="fa fa-envelope"></i></div>
+      <h4>الإيميل</h4>
+      <p>deltapharma@gmail.com</p>
+    </div>
+    <div class="contact-item">
+      <div class="icon-circle whatsapp"><i class="fa fa-whatsapp"></i></div>
+      <h4>الواتس</h4>
+      <p>98765432963+</p>
+    </div>
+    <div class="contact-item">
+      <div class="icon-circle phone"><i class="fa fa-phone"></i></div>
+      <h4>الهاتف</h4>
+      <p>+963 11 6025</p>
+    </div>
+    <div class="contact-item">
+      <div class="icon-circle location"><i class="fa fa-map-marker"></i></div>
+      <h4>العنوان</h4>
+      <p>المنصورة<br>حلب - سوريا</p>
+    </div>
+  </div>
+  <p class="copyright">© 2025 شركة دلتا للصناعات الدوائية. جميع الحقوق محفوظة.</p>
+</section>
+  <!-- نفس الفوتر من الصفحة الرئيسية -->
+</body>
+</html>
