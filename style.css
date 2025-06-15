@@ -66,6 +66,7 @@ nav ul li a {
 /* الجوال */
 @media (max-width: 768px) {
   .header-content {
+	  direction: ltr;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
