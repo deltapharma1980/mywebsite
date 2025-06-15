@@ -84,11 +84,18 @@ nav ul li a {
   }
 
   .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-  }
+  display: none;
+  position: absolute;
+  top: 60px; /* المسافة من الأعلى (تحت الهيدر) */
+  left: 20px; /* محاذاة من اليسار */
+  background-color: #004080;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  flex-direction: column;
+  padding: 10px;
+  z-index: 1000;
+}
+
 
   #menu-toggle:checked + .menu-icon + nav .nav-links {
     display: flex;
