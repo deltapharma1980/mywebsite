@@ -76,7 +76,7 @@ nav ul li a:hover {
 @media (max-width: 768px) {
   .header-content {
     /* نترك الاتجاه rtl للغة العربية */
-    direction: rtl;
+/*direction: rtl;*/
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
