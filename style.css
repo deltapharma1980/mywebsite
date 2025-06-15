@@ -8,9 +8,13 @@ body {
 
 /* تصميم الهيدر العام */
 header {
-  background-color: #004080;
+  background: linear-gradient(to left, #0b2d72, #3b82f6);
   color: white;
-  padding: 10px 20px;
+  padding: 20px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-content {
@@ -47,10 +51,15 @@ nav ul {
 nav ul li a {
   color: white;
   text-decoration: none;
-  margin-right: 20px;
-  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 /* أيقونة القائمة */
 .menu-icon {
   display: none;
@@ -66,8 +75,8 @@ nav ul li a {
 /* الجوال */
 @media (max-width: 768px) {
   .header-content {
-    /* نحافظ على اتجاه rtl للغة العربية */
-    
+    /* نترك الاتجاه rtl للغة العربية */
+    direction: rtl;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -76,13 +85,12 @@ nav ul li a {
   /* ترتيب العناصر */
   .menu-icon {
     display: block;
-    order: 0; /* يظهر على اليسار */
-    margin-left: 10px; /* مسافة بسيطة من اليسار */
-    cursor: pointer;
+    order: 0; /* تظهر على اليسار */
+    margin-left: 10px;
   }
 
   .logo-title {
-    order: 1; /* يظهر على اليمين */
+    order: 1; /* تظهر على اليمين */
   }
 
   /* القائمة المنسدلة */
@@ -97,7 +105,7 @@ nav ul li a {
     flex-direction: column;
     padding: 10px;
     z-index: 1000;
-    width: 150px; /* عرض مناسب للقائمة */
+    width: 150px;
   }
 
   /* إظهار القائمة عند التفعيل */
@@ -108,7 +116,6 @@ nav ul li a {
   /* روابط القائمة عمودية */
   nav ul {
     flex-direction: column;
-    padding: 0;
   }
 
   nav ul li a {
@@ -118,6 +125,7 @@ nav ul li a {
     text-decoration: none;
   }
 }
+
 
 
 
