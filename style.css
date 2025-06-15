@@ -66,46 +66,59 @@ nav ul li a {
 /* الجوال */
 @media (max-width: 768px) {
   .header-content {
-	  direction: ltr;
+    /* نحافظ على اتجاه rtl للغة العربية */
+    direction: rtl;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-  /* نحدد ترتيب العناصر */
+  /* ترتيب العناصر */
+  .menu-icon {
+    display: block;
+    order: 0; /* يظهر على اليسار */
+    margin-left: 10px; /* مسافة بسيطة من اليسار */
+    cursor: pointer;
+  }
+
   .logo-title {
     order: 1; /* يظهر على اليمين */
   }
 
-  .menu-icon {
-    display: block;
-    order: 2; /* يظهر على اليسار */
-    margin-right: auto; /* يدفعه لليسار الكامل */
+  /* القائمة المنسدلة */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px; /* تحت الهيدر */
+    left: 20px; /* محاذاة من اليسار */
+    background-color: #004080;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    flex-direction: column;
+    padding: 10px;
+    z-index: 1000;
+    width: 150px; /* عرض مناسب للقائمة */
   }
 
-  .nav-links {
-  display: none;
-  position: absolute;
-  top: 60px; /* المسافة من الأعلى (تحت الهيدر) */
-  left: 20px; /* محاذاة من اليسار */
-  background-color: #004080;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-  flex-direction: column;
-  padding: 10px;
-  z-index: 1000;
-}
-
-
+  /* إظهار القائمة عند التفعيل */
   #menu-toggle:checked + .menu-icon + nav .nav-links {
     display: flex;
+  }
+
+  /* روابط القائمة عمودية */
+  nav ul {
+    flex-direction: column;
+    padding: 0;
   }
 
   nav ul li a {
     margin: 10px 0;
     font-size: 18px;
+    color: white;
+    text-decoration: none;
   }
 }
+
 
 
 main {
