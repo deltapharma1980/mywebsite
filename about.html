@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شركة دلتا للصناعات الدوائية</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+    <div class="header-content">
+      <div class="logo-title">
+        <img src="images/logo.webp" alt="لوغو الشركة" class="logo">
+        <h1>دلتا للصناعات الدوائية</h1>
+      </div>
+
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="products.html">المنتجات</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+  
+  <section class="about-section">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>من نحن</h2>
+        <p>
+          شركة دلتا للصناعات الدوائية هي شركة رائدة في مجال تصنيع وتطوير الأدوية والمستحضرات الطبية بجودة عالية ومعايير عالمية.
+          منذ تأسيسها، التزمت الشركة بالابتكار والتطور الدائم لتقديم منتجات دوائية آمنة وفعالة تلبّي احتياجات السوق المحلي والدولي.
+        </p>
+        <p>
+          نعمل بفريق متخصص من الخبراء في الصناعات الدوائية، ونعتمد أحدث التقنيات في خطوط الإنتاج ضمن بيئة معقّمة ومتطورة.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="images/2.webp" alt="عن الشركة">
+      </div>
+    </div>
+  </section>
+<hr class="section-divider">
+  <h2 class="section-title">أقسام المعمل</h2>
+  <div class="grid-section">
+    <div class="card" id="section-syrups">
+  <h3>قسم الشرابات</h3>
+  <p>يختص بإنتاج الشرابات الطبية بمواصفات دقيقة وبأحدث معدات الخلط والتعبئة.</p>
+  <button onclick="openModal('modalSyrups')">عرض الصور</button>
+</div>
+
+<div class="card" id="section-tablet">
+  <h3>المضغوطات</h3>
+  <p>ييعمل على تصنيع الأقراص الصلبة باستخدام تقنيات متقدمة لضمان تجانس المحتوى.</p>
+  <button onclick="openModal('modaltablet')">عرض الصور</button>
+</div>
+
+<div class="card" id="section-taakim">
+  <h3>قسم التعقيم</h3>
+  <p>مسؤول عن تعقيم المنتجات والمعدات وفق أعلى المعايير الصحية الدولية.</p>
+  <button onclick="openModal('modaltaakim')">عرض الصور</button>
+</div>
+
+<div class="card" id="section-joude">
+  <h3>قسم مراقبة الجودة</h3>
+  <p>يضمن سلامة وجودة المنتجات عبر اختبارات دقيقة ومخبرية في كل مرحلة إنتاج.</p>
+  <button onclick="openModal('modaljoude')">عرض الصور</button>
+</div>
+  </div>
+<hr class="section-divider">
+  <h2 class="section-title">الشهادات والاعتمادات</h2>
+  <div class="grid-section">
+    <div class="card">
+      <h3>شهادة GMP</h3>
+      <p>اعتماد ممارسات التصنيع الجيد، يضمن الالتزام بأعلى معايير الجودة والإنتاج.</p>
+    </div>
+    <div class="card">
+      <h3>شهادة ISO 9001</h3>
+      <p>نظام إدارة الجودة العالمية لتقديم منتجات وخدمات متسقة ترضي العملاء.</p>
+    </div>
+    <div class="card">
+      <h3>شهادة ISO 14001</h3>
+      <p>نظام إدارة بيئية يؤكد التزام الشركة بالاستدامة وتقليل الأثر البيئي.</p>
+    </div>
+  </div>
+  </main>
+  
+  
+  <section class="contact-section">
+    <div class="contact-footer">
+      <div class="contact-item">
+        <div class="icon-circle email"><i class="fas fa-envelope"></i></div>
+        <h4>الإيميل</h4>
+        <p>deltapharma@gmail.com</p>
+      </div>
+      <div class="contact-item">
+        <div class="icon-circle whatsapp"><i class="fab fa-whatsapp"></i></div>
+        <h4>الواتس</h4>
+        <p>98765432963+</p>
+      </div>
+      <div class="contact-item">
+        <div class="icon-circle phone"><i class="fas fa-phone"></i></div>
+        <h4>الهاتف</h4>
+        <p>+963 11 6025</p>
+      </div>
+      <div class="contact-item">
+        <div class="icon-circle location"><i class="fas fa-map-marker-alt"></i></div>
+        <h4>العنوان</h4>
+        <p>المنصورة<br>حلب - سوريا</p>
+      </div>
+    </div>
+    <p class="copyright">© 2025 شركة دلتا للصناعات الدوائية. جميع الحقوق محفوظة.</p>
+  </section>
+  
+  <!-- مودال قسم الشرابات -->
+<div id="modalSyrups" class="modal" style="display:none;">
+  <div class="modal-content" style="max-width: 800px; margin: 50px auto; background:#fff; padding: 20px; border-radius: 10px; position: relative;">
+    <span class="close" onclick="closeModal('modalSyrups')" style="cursor:pointer; position: absolute; top: 10px; right: 15px; font-size: 24px;">&times;</span>
+
+    <!-- Swiper الكاروسيل -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/2.webp" alt="شراب 1"></div>
+        <div class="swiper-slide"><img src="images/1.webp" alt="شراب 2"></div>
+        <div class="swiper-slide"><img src="images/2.webp" alt="شراب 3"></div>
+      </div>
+      <!-- أزرار التنقل -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- نقاط التنقل -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+</div>
+
+<div id="modaltablet" class="modal" style="display:none;">
+  <div class="modal-content" style="max-width: 800px; margin: 50px auto; background:#fff; padding: 20px; border-radius: 10px; position: relative;">
+    <span class="close" onclick="closeModal('modaltablet')" style="cursor:pointer; position: absolute; top: 10px; right: 15px; font-size: 24px;">&times;</span>
+
+    <!-- Swiper الكاروسيل -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/2.webp" alt="شراب 1"></div>
+        <div class="swiper-slide"><img src="images/1.webp" alt="شراب 2"></div>
+        <div class="swiper-slide"><img src="images/2.webp" alt="شراب 3"></div>
+      </div>
+      <!-- أزرار التنقل -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- نقاط التنقل -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+</div>
+
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+  // إغلاق المودال عند الضغط خارج المحتوى
+  window.addEventListener('click', function(event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  });
+
+  // تهيئة Swiper
+  document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.mySwiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      }
+    });
+  });
+</script>
+
+  </body>

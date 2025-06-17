@@ -1,0 +1,129 @@
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شركة دلتا للصناعات الدوائية</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script src="script.js"></script>
+</body>
+
+<body>
+
+<header>
+    <div class="header-content">
+      <div class="logo-title">
+        <img src="images/logo.webp" alt="لوغو الشركة" class="logo">
+        <h1>دلتا للصناعات الدوائية</h1>
+      </div>
+
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="products.html">المنتجات</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- نفس الهيدر من الصفحة الرئيسية -->
+
+  <main>
+  
+  <button class="back-button" onclick="window.history.back()">
+  <i class="fas fa-arrow-right"></i> رجوع
+</button>
+  
+    <section class="products-list">
+  <div class="container">
+    <h2 class="section-title">المحاليل الموضعية</h2>
+    
+    <div class="products-grid">
+      <!-- منتج 1 -->
+      <div class="product-card">
+        <div class="product-clickable" onclick="openProductModal('product71')">
+          <img src="images/71.webp" alt="مضغوطات">
+          <h3>كلينداسين-ت</h3>
+        </div>
+      </div>
+      
+   
+	  
+    </div>
+  </div>
+</section>
+
+<!-- النوافذ المنبثقة -->
+<div id="product71" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <h2>كلينداسين-ت</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      
+      <h3>التركيب:</h3>
+      <p>كل ١٠٠مل تحتوي على: كلیندامایسین فوسفات ١٫٣غ 
+مایكافئ ١غ كلیندامایسین
+
+
+
+</p>
+      
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  </main>
+
+<section class="contact-section">
+  <div class="contact-footer">
+    <div class="contact-item">
+      <div class="icon-circle email"><i class="fa fa-envelope"></i></div>
+      <h4>الإيميل</h4>
+      <p>deltapharma@gmail.com</p>
+    </div>
+    <div class="contact-item">
+      <div class="icon-circle whatsapp"><i class="fa fa-whatsapp"></i></div>
+      <h4>الواتس</h4>
+      <p>98765432963+</p>
+    </div>
+    <div class="contact-item">
+      <div class="icon-circle phone"><i class="fa fa-phone"></i></div>
+      <h4>الهاتف</h4>
+      <p>+963 11 6025</p>
+    </div>
+    <div class="contact-item">
+      <div class="icon-circle location"><i class="fa fa-map-marker"></i></div>
+      <h4>العنوان</h4>
+      <p>المنصورة<br>حلب - سوريا</p>
+    </div>
+  </div>
+  <p class="copyright">© 2025 شركة دلتا للصناعات الدوائية. جميع الحقوق محفوظة.</p>
+</section>
+  <!-- نفس الفوتر من الصفحة الرئيسية -->
+</body>
+</html>
