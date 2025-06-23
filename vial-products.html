@@ -355,5 +355,32 @@
   <p class="copyright">© 2025 شركة دلتا للصناعات الدوائية. جميع الحقوق محفوظة.</p>
 </section>
   <!-- نفس الفوتر من الصفحة الرئيسية -->
+  
+  
+  <script>
+function openProductModal(id) {
+  document.getElementById(id).style.display = "block";
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal() {
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach(modal => {
+    modal.style.display = "none";
+  });
+  document.body.style.overflow = "auto";
+}
+
+// إغلاق المودال عند الضغط خارج المحتوى
+window.addEventListener('click', function(event) {
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
+});
+</script>
 </body>
 </html>

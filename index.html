@@ -10,6 +10,8 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -68,41 +70,13 @@
     <hr class="section-divider">
 	
 	
-	
-	
-	<!-- قسم عرض المنتج الجديد بشكل أفقي -->
-<section class="new-product-section">
-  <h2 class="section-title">جديدنا</h2>
-  
-  <div class="product-card-horizontal">
-    <img src="images/Picture1.webp" alt="توبرابيوتيك" class="product-image">
-    <div class="card-body">
-      <h3>توبرابيوتيك</h3>
-      <p>قطرة عينية مضادة للبكتيريا لعلاج التهابات العين البكتيرية والوقاية بعد العمليات الجراحية.</p>
-      <button class="order-button" onclick="openModal('productNew')">عرض التفاصيل</button>
-    </div>
-  </div>
-</section>
 
 
-<!-- النافذة المنبثقة -->
-<div id="productNew" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('productNew')">&times;</span>
-    
-    <h2>توبرابيوتيك</h2>
-    <div class="product-details">
-      <h3>الاستطبابات:</h3>
-      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
-      
-      <h3>التركيب:</h3>
-      <p>كل ١٠٠ مل يحتوي على:<br>توبرامایسین ٣٠٠ ملغ</p>
-      
-      <h3>التحذيرات:</h3>
-      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
-    </div>
-  </div>
-</div>
+
+
+
+
+
 
 
 <script>
@@ -128,7 +102,7 @@ fetch('product.json')
 </script>
 
 
-<hr class="section-divider">
+
 
     <section class="products-types">
       <div class="container">
@@ -170,6 +144,166 @@ fetch('product.json')
     </section>
 
     <hr class="section-divider">
+	
+	
+	
+	<!-- تضمين Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<section class="products-slider-section">
+  <div class="container">
+    <h2 class="section-title">المنتجات الجديدة</h2>
+
+    <div class="swiper product-swiper">
+      <div class="swiper-wrapper">
+
+        <!-- بطاقة المنتج 1 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-clickable" onclick="openProductModal('product57')">
+              <img src="images/57.webp" alt="مضغوطات">
+              <span class="brand-name">نوع المنتج</span>
+              <h3 class="product-name">روسيروس 250 ملغ</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- بطاقة المنتج 2 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-clickable" onclick="openProductModal('product58')">
+              <img src="images/58.webp" alt="مضغوطات">
+              <span class="brand-name">نوع المنتج</span>
+              <h3 class="product-name">روسيروس 500 ملغ</h3>
+            </div>
+          </div>
+        </div>
+		
+		 <!-- بطاقة المنتج 2 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-clickable" onclick="openProductModal('product58')">
+              <img src="images/58.webp" alt="مضغوطات">
+              <span class="brand-name">نوع المنتج</span>
+              <h3 class="product-name">روسيروس 500 ملغ</h3>
+            </div>
+          </div>
+        </div>
+		
+		 <!-- بطاقة المنتج 2 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-clickable" onclick="openProductModal('product58')">
+              <img src="images/58.webp" alt="مضغوطات">
+              <span class="brand-name">نوع المنتج</span>
+              <h3 class="product-name">روسيروس 500 ملغ</h3>
+            </div>
+          </div>
+        </div>
+		
+		 <!-- بطاقة المنتج 2 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-clickable" onclick="openProductModal('product58')">
+              <img src="images/58.webp" alt="مضغوطات">
+              <span class="brand-name">نوع المنتج</span>
+              <h3 class="product-name">روسيروس 500 ملغ</h3>
+            </div>
+          </div>
+        </div>
+		
+		 <!-- بطاقة المنتج 2 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-clickable" onclick="openProductModal('product58')">
+              <img src="images/58.webp" alt="مضغوطات">
+              <span class="brand-name">نوع المنتج</span>
+              <h3 class="product-name">روسيروس 500 ملغ</h3>
+            </div>
+          </div>
+        </div>
+		
+		 <!-- بطاقة المنتج 2 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-clickable" onclick="openProductModal('product58')">
+              <img src="images/58.webp" alt="مضغوطات">
+              <span class="brand-name">نوع المنتج</span>
+              <h3 class="product-name">روسيروس 500 ملغ</h3>
+            </div>
+          </div>
+        </div>
+		
+		 <!-- بطاقة المنتج 2 -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-clickable" onclick="openProductModal('product58')">
+              <img src="images/58.webp" alt="مضغوطات">
+              <span class="brand-name">نوع المنتج</span>
+              <h3 class="product-name">روسيروس 500 ملغ</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- أضف باقي البطاقات بنفس الطريقة داخل swiper-slide -->
+
+      </div>
+
+      <!-- أزرار التنقل -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- النقاط السفلية -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- تضمين Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const productSwiper = new Swiper('.product-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      1024: { slidesPerView: 4 }
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  });
+</script>
+
+<!-- نافذة منبثقة للمنتج 57 مثال -->
+<div id="product57" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>روسيروس 250 ملغ</h2>
+    <div class="product-details">
+      <h3>الاستطبابات:</h3>
+      <p>علاج التهابات العين البكتيرية، الوقاية من العدوى بعد العمليات الجراحية للعين، علاج التهاب الملتحمة الجرثومي.</p>
+      <h3>التركيب:</h3>
+      <p>كل فیال یحتوي على: سیفتریاكسون (صودیوم) 250 ملغ</p>
+      <h3>التحذيرات:</h3>
+      <p>لا تستخدم في حالة الحساسية لأي من مكونات الدواء. قد يسبب احمراراً مؤقتاً في العين.</p>
+    </div>
+  </div>
+</div>
+
+
+<hr class="section-divider">
 
     <h2 class="section-title">نشاطاتنا</h2>
 
@@ -206,25 +340,7 @@ fetch('product.json')
 	
 
 
-<script>
-function openModal(id) {
-  document.getElementById(id).style.display = "flex";
-}
 
-function closeModal(id) {
-  document.getElementById(id).style.display = "none";
-}
-
-// إغلاق عند النقر خارج المودال
-window.onclick = function(event) {
-  const modals = document.querySelectorAll(".modal");
-  modals.forEach(modal => {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-};
-</script>
 
 
 
@@ -291,5 +407,34 @@ window.onclick = function(event) {
       },
     });
   </script>
+  
+  
+
+<script>
+function openProductModal(id) {
+  document.getElementById(id).style.display = "block";
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal() {
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach(modal => {
+    modal.style.display = "none";
+  });
+  document.body.style.overflow = "auto";
+}
+
+// إغلاق المودال عند الضغط خارج المحتوى
+window.addEventListener('click', function(event) {
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
+});
+</script>
+
 </body>
 </html>
