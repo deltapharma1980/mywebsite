@@ -743,7 +743,7 @@ body {
 
 /* أنماط النافذة المنبثقة */
 .modal {
-  display: none;
+  display: flex;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -752,13 +752,14 @@ body {
   height: 100%;
   background-color: rgba(0,0,0,0.8);
   overflow: auto;
+  align-items: center;     /* توسيط عمودي */
+  justify-content: center; /* توسيط أفقي */
 }
 
 .modal-content {
   background-color: #fff;
-  margin: 5% auto;
   padding: 30px;
-  width: 80%;
+  width: 90%;
   max-width: 700px;
   border-radius: 10px;
   box-shadow: 0 5px 30px rgba(0,0,0,0.3);
